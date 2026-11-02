@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Que filme ver?☯</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    </div>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="#melhores">mais avaliados</a>
+        <a href="#assistidos">famosos</a>
+        <a href="quem-somos.html">Quem Somos</a>
+    </nav>
+
+</header>
+  
+  <main>  
+    <section class="categoria">
+      <h3>mais avaliados</h3>
+    <div class="carrossel-container">
+  <div class="filmes">
+    <img src="inatividade-paranormal.jpg">
+    <img src="bastardos-inglorius.jpg">
+    <img src="inatividade-paranormal2.jpg">
+    <img src="todo-mundo-em-panico.jpg">
+    <img src="projetoX.jpg">
+    <img src="movie43.jpg">
+    <img src="superbad.jpg">
+  </div>
+</div>
+    </section>
+
+    <section class="categoria">
+      <h3>famosos</h3>
+      <div class="carrossel-container">
+        <button class="seta esquerda" onclick="scrollAssistidos(-300)">&#10094;</button>
+        <div class="filmes assistidos">
+          <img src="anjos-da-lei.jpg" onclick="abrir('anjos-da-lei')">
+          <img src="bastardos-inglorius.jpg" onclick="abrir('bastardos inglorios')">
+          <img src="como-sobreviver-a-um-filme-ruim.jpg" onclick="abrir('Como sobreviver a um ataque zumbi')">
+          <img src="donos-da-rua.jpg" onclick="abrir('donos-da-rua')">
+          <img src="inatividade-paranormal.jpg" onclick="abrir('inatividade-paranormal')">
+          <img src="inatividade-paranormal2.jpg" onclick="abrir('inatividade-paranormal2')">
+          <img src="bons-fudidos.webp" onclick="abrir('bons meninos')">
+          <img src="corações-de-ferro.webp" onclick="abrir('corações-de-ferro')">
+          <img src="movie43.jpg" onclick="abrir('Movie 43')">
+          <img src="norbit.jpg" onclick="abrir('norbit')">
+          <img src="projetoX.jpg" onclick="abrir('projetoX')">
+          <img src="se-beber-não-case.jpg" onclick="abrir('se beber não case')">
+          <img src="superbad.jpg" onclick="abrir('Superbad')">
+          <img src="todo-mundo-em-panico.jpg" onclick="abrir('todo-mundo-em-panico')">
+        </div>
+        <button class="seta direita" onclick="scrollAssistidos(300)">&#10095;</button>
+      </div>
+    </section>
+
+    <section class="categoria">
+      <h3>🏆 Ranking da Galera </h3>
+      <div class="carrossel-container">
+  <div id="ranking" class="filmes" style="display:flex; gap:15px; flex-wrap:wrap"></div>
+</div>
+      
+    </section>
+  </main>
+
+  <!-- MODAL FILME -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharModal()">&times;</span>
+      <img id="imgFilme" class="modal-img">
+      <div class="modal-texto">
+        <h2 id="tituloFilme"></h2>
+        <p id="sinopseFilme"></p>
+        <button onclick="darNota(1)">⭐</button>
+        <button onclick="darNota(2)">⭐⭐</button>
+        <button onclick="darNota(3)">⭐⭐⭐</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL LOGIN - VERSÃO NOVA COM BANCO -->
+  <div id="modal-login" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="fecharLogin()">&times;</span>
+      <h2>Entrar / Cadastrar</h2>
+      <input type="text" id="nome-usuario" placeholder="Nome real">
+      <input type="text" id="apelido-usuario" placeholder="Apelido">
+      <input type="email" id="email-usuario" placeholder="Email">
+      <input type="password" id="senha-usuario" placeholder="Senha">
+      <div style="margin-top:10px">
+        <button onclick="banco.login()">Entrar</button>
+        <button onclick="banco.cadastrar()">Criar conta</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="funcionallidades.js"></script>
+</body>
+</html>

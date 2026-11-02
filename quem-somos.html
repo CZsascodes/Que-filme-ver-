@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quem Somos | Que filme ver?</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #191919;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 2px solid #e50914;
+        }
+
+        header h1 {
+            color: #e50914;
+            margin-bottom: 15px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #e50914;
+        }
+
+        .apresentacao {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(
+                rgba(0,0,0,0.65),
+                rgba(0,0,0,0.9)
+            ), url("https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1600")
+            center/cover;
+        }
+
+        .apresentacao h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+
+        .apresentacao p {
+            max-width: 750px;
+            margin: auto;
+            color: #ccc;
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .container {
+            width: 85%;
+            max-width: 1100px;
+            margin: 60px auto;
+        }
+
+        .titulo {
+            text-align: center;
+            color: #e50914;
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background: #1c1c1c;
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #e50914;
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #e50914;
+            margin-bottom: 15px;
+            font-size: 23px;
+        }
+
+        .card p {
+            color: #ccc;
+            line-height: 1.7;
+        }
+
+        .valores {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .valor {
+            background: #1c1c1c;
+            padding: 25px 15px;
+            text-align: center;
+            border-bottom: 3px solid #e50914;
+            border-radius: 8px;
+        }
+
+        .valor h3 {
+            margin-bottom: 12px;
+        }
+
+        .valor p {
+            color: #aaa;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        .projeto {
+            background: #1c1c1c;
+            border: 1px solid #333;
+            border-radius: 10px;
+            padding: 35px;
+        }
+
+        .projeto h2 {
+            margin-bottom: 20px;
+        }
+
+        .projeto h3 {
+            color: #e50914;
+            margin: 25px 0 12px;
+        }
+
+        .projeto p {
+            color: #ccc;
+            line-height: 1.8;
+        }
+
+        .ods {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin: 25px 0;
+        }
+
+        .ods-numero {
+            background: #c5192d;
+            width: 110px;
+            height: 110px;
+            flex-shrink: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+        }
+
+        .ods-numero strong {
+            font-size: 40px;
+        }
+
+        .projeto ul {
+            padding-left: 25px;
+            color: #ccc;
+            line-height: 2;
+        }
+
+        footer {
+            background: #191919;
+            border-top: 2px solid #e50914;
+            text-align: center;
+            padding: 25px;
+            color: #888;
+        }
+
+        @media (max-width: 800px) {
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            .valores {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .apresentacao h2 {
+                font-size: 30px;
+            }
+
+            .ods {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Que filme ver?</h1>
+
+        <nav>
+            <a href="index.html">Início</a>
+            <a href="index.html#melhores">Melhores</a>
+            <a href="index.html#assistidos">Assistidos</a>
+            <a href="quem-somos.html">Quem Somos</a>
+        </nav>
+
+    </header>
+
+    <section class="apresentacao">
+
+        <h2>Quem Somos?</h2>
+
+        <p>
+            Somos uma plataforma digital dedicada aos amantes
+            do cinema. Nosso objetivo é proporcionar um espaço
+            onde pessoas possam conhecer, organizar, avaliar
+            e compartilhar suas opiniões sobre diferentes filmes,
+            conectando usuários através de seus interesses
+            cinematográficos.
+        </p>
+
+    </section>
+
+    <main class="container">
+
+        <h2 class="titulo">Nossa Empresa</h2>
+
+        <section class="cards">
+
+            <div class="card">
+
+                <h3>Missão</h3>
+
+                <p>
+                    Oferecer uma plataforma digital onde os usuários
+                    possam registrar, avaliar e compartilhar suas
+                    opiniões sobre filmes, incentivando a interação
+                    e a troca de experiências entre pessoas
+                    apaixonadas por cinema.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Visão</h3>
+
+                <p>
+                    Tornar-se uma plataforma reconhecida entre
+                    os amantes do cinema, sendo referência na
+                    organização, avaliação e compartilhamento
+                    de experiências cinematográficas.
+                </p>
+
+            </div>
+
+            <div class="card">
+
+                <h3>Objetivo</h3>
+
+                <p>
+                    Facilitar a descoberta de novos filmes,
+                    permitir que os usuários organizem suas
+                    produções favoritas e incentivar a expressão
+                    de opiniões através de avaliações e comentários.
+                </p>
+
+            </div>
+
+        </section>
+
+        <br><br><br>
+
+        <h2 class="titulo">Nossos Valores</h2>
+
+        <section class="valores">
+
+            <div class="valor">
+                <h3>Inovação</h3>
+                <p>Buscar melhorias para proporcionar uma experiência cada vez melhor.</p>
+            </div>
+
+            <div class="valor">
+                <h3>Comunidade</h3>
+                <p>Incentivar a interação e o compartilhamento entre usuários.</p>
+            </div>
+
+            <div class="valor">
+                <h3>Respeito</h3>
+                <p>Valorizar diferentes opiniões e gostos cinematográficos.</p>
+            </div>
+
+            <div class="valor">
+                <h3>Criatividade</h3>
+                <p>Estimular a descoberta de novas produções e histórias.</p>
+            </div>
+
+            <div class="valor">
+                <h3>Acessibilidade</h3>
+                <p>Oferecer uma plataforma simples e fácil de utilizar.</p>
+            </div>
+
+        </section>
+
+        <br><br><br>
+
+        <h2 class="titulo">Projeto Sustentável</h2>
+
+        <section class="projeto">
+
+            <h2>🎬 Cinema Consciente</h2>
+
+            <p>
+                O Cinema Consciente é uma iniciativa que busca
+                utilizar o interesse pelo cinema como uma forma
+                de incentivar a educação, a conscientização social
+                e a troca de conhecimentos.
+            </p>
+
+            <div class="ods">
+
+                <div class="ods-numero">
+                    <strong>4</strong>
+                    <span>ODS ONU</span>
+                </div>
+
+                <div>
+                    <h3>ODS 4 - Educação de Qualidade</h3>
+
+                    <p>
+                        Nosso projeto está relacionado ao Objetivo
+                        de Desenvolvimento Sustentável número 4,
+                        estabelecido pela Organização das Nações Unidas.
+                    </p>
+                </div>
+
+            </div>
+
+            <h3>Como funciona?</h3>
+
+            <p>
+                A proposta consiste em criar seleções temáticas
+                de filmes que abordem assuntos como história,
+                meio ambiente, cultura e questões sociais.
+                Os usuários poderão avaliar essas produções,
+                compartilhar suas interpretações e discutir
+                os assuntos apresentados nas obras.
+            </p>
+
+            <h3>Quais são nossos objetivos?</h3>
+
+            <ul>
+                <li>Incentivar o conhecimento através do cinema.</li>
+                <li>Estimular o pensamento crítico dos usuários.</li>
+                <li>Promover discussões sobre questões sociais e ambientais.</li>
+                <li>Valorizar produções com conteúdo educativo.</li>
+                <li>Incentivar a troca de opiniões e conhecimentos.</li>
+            </ul>
+
+            <h3>Qual impacto queremos gerar?</h3>
+
+            <p>
+                Queremos mostrar que o cinema vai além do
+                entretenimento. Os filmes também podem transmitir
+                conhecimentos, apresentar diferentes realidades
+                e contribuir para a formação de opiniões.
+                Dessa maneira, nossa plataforma busca unir
+                entretenimento, cultura e educação.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>
+            © 2026 Que filme ver? - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>
